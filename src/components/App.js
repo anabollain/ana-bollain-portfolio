@@ -21,7 +21,8 @@ import '../styles/App.scss';
 function App() {
 
   //STATE VARIABLES
-  const [filterProject, setFilterProject] = useState(['All']); 
+  //const [filterProject, setFilterProject] = useState(['All']); 
+  const [selectedType, setSelectedType] = useState('All');
   /*const [contactForm, setContactForm] = useState(ls.get('contactForm', {
     name: '',
     email: '',
@@ -30,7 +31,7 @@ function App() {
   }));
   const [contactResult, setContactResult] = useState('');*/
   //EVENT FUNCTIONS
-  const handleFilterProject = (value) => {
+  /*const handleFilterProject = (value) => {
     if(filterProject.includes(value)){
       const newProject = filterProject.filter((each) => each !== value);
       setFilterProject(newProject);
@@ -38,6 +39,10 @@ function App() {
       const newProject = [...filterProject, value];
       setFilterProject(newProject);
     }
+  }*/
+
+  const handleFilterProject = (value) => {
+    setSelectedType(value);
   }
 /*
   const handleInputContact = (name, value) => {
@@ -68,11 +73,19 @@ function App() {
   }*/
 
   //RENDER FUNCTIONS
-  const renderFiltered = () => {
+  /*const renderFiltered = () => {
     if(filterProject.includes('All')){
       return projectData;
     }else{
       return projectData.filter((each) => filterProject.includes(each.type));
+    }
+  }*/
+
+  const renderFiltered = () => {
+    if(selectedType === 'All'){
+      return projectData;
+    }else{
+      return projectData.filter((each) => each.type === selectedType);
     }
   }
 
@@ -81,7 +94,7 @@ function App() {
     <>
       <Header/>
       <Routes>
-        <Route path='/' element={<ProjectList projectData={renderFiltered()} handleFilterProject={handleFilterProject} filterProject={filterProject}/>} />
+        <Route path='/' element={<ProjectList projectData={renderFiltered()} handleFilterProject={handleFilterProject} type={selectedType}/>} />
         <Route path='/aboutme' element={<AboutMe/>}/>
         <Route path='/skills' element={<Skills />} />
       </Routes>

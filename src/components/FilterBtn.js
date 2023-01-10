@@ -10,7 +10,7 @@ function FilterBtn(props) {
   //RETURN
   return (
     <div className="filter">
-        <input className='filter__check' type="checkbox" name={props.text} id={props.text} value={props.text} onClick={handleClickFilter}/>
+        <input className='filter__check' type="radio" name="type" id={props.text} value={props.text} onClick={handleClickFilter}/>
         <label className={`filter__label ${props.checked ? 'checked': ''}`} htmlFor={props.text}>{props.text}</label>
     </div>
     );
