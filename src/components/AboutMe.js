@@ -1,5 +1,5 @@
 import '../styles/AboutMe.scss';
-import cvAnaBollain from '../data/cvAnaBollain.pdf';
+import cvAnaBollain from '../data/resumeAnaBollain.pdf';
 
 function AboutMe(props) {
 
