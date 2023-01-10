@@ -6,7 +6,7 @@ import {useState} from 'react';
 //services
 //import callToApi from '../services/api';
 import projectData from '../data/projects';
-//import ls from '../services/localStorage';
+import ls from '../services/localStorage';
 //components
 import Header from './Header';
 import ProjectList from './ProjectList';
@@ -22,7 +22,7 @@ function App() {
 
   //STATE VARIABLES
   //const [filterProject, setFilterProject] = useState(['All']); 
-  const [selectedType, setSelectedType] = useState('All');
+  const [selectedType, setSelectedType] = useState(ls.get('selectedInput', 'All'));
   /*const [contactForm, setContactForm] = useState(ls.get('contactForm', {
     name: '',
     email: '',
@@ -43,6 +43,7 @@ function App() {
 
   const handleFilterProject = (value) => {
     setSelectedType(value);
+    ls.set('selectedInput', value);
   }
 /*
   const handleInputContact = (name, value) => {
