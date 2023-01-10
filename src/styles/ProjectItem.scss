@@ -28,6 +28,10 @@
                 object-fit: cover;
                 object-position: center;
                 opacity: 80%;
+                &:hover{
+                    padding: rem(15);
+                    position: top;
+                }
             }
             &--title{
                 font-size: rem(14);

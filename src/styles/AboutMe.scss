@@ -20,7 +20,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: rem(15);
+        gap: rem(14);
         &--title{
             font-size: rem(26);
             font-weight: 800;
@@ -31,7 +31,7 @@
         }
         &--text{
             list-style: none;
-            font-size: rem(12);
+            font-size: rem(13);
             width: rem(600);
         }
         &--btn{
@@ -52,8 +52,8 @@
             color: $color-light;
             background-color: $color-dark;
             width: fit-content;
-            padding: rem(5) rem(8) rem(5) rem(8);
-            font-size: rem(10);
+            padding: rem(6) rem(8) rem(6) rem(8);
+            font-size: rem(12);
             &:hover{
                 background-color: $color-extra;
             }
@@ -74,8 +74,8 @@
             }
     }
     &__img{
-        width: rem(280);
-        height: rem(280);
+        width: rem(310);
+        height: rem(310);
         background-image: url('../images/ana-bollain.jpg');
         background-position: top center;
         background-size: cover;

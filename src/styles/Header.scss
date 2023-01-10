@@ -26,17 +26,14 @@
             background-color: $color-grey;
             background-position: center center;
             background-size: cover;
-            opacity: 85%;
+            opacity: 80%;
         }
         &--title{
-            font-size: rem(16);
+            font-size: rem(17);
             padding-top: rem(10);
         }
         &--subtitle{
-            font-size: rem(10);
-            //background-color: $color-grey;
-            //color: $color-light;
-            //padding: rem(5);
+            font-size: rem(11);
         }
     }
     &__nav{

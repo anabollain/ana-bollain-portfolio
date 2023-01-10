@@ -11,14 +11,14 @@ function Skills() {
                 <div className='skills__div'>
                     <h3 className='skills__title'>Soft Skills</h3>
                     <ul className='skills__list'>
-                        <li className='skills__list--item'>👐 Teamwork</li>
-                        <li className='skills__list--item'>💁 Empathy</li>
-                        <li className='skills__list--item'>🚩 Problem Solving</li>
-                        <li className='skills__list--item'>🔹 Attention to detail</li>
-                        <li className='skills__list--item'>🖊️ Creative Thinking</li>
-                        <li className='skills__list--item'>❔ Responsiveness</li>
-                        <li className='skills__list--item'>🐧 Adaptability</li>
-                        <li className='skills__list--item'>💼 Management</li>
+                        <li className='skills__list--item'><div className='skills__list--item--icon'>👐</div><p>Teamwork</p></li>
+                        <li className='skills__list--item'><div className='skills__list--item--icon'>💁</div><p>Empathy</p></li>
+                        <li className='skills__list--item'><div className='skills__list--item--icon'>🚩</div><p>Problem Solving</p></li>
+                        <li className='skills__list--item'><div className='skills__list--item--icon'>🔹</div><p>Attention to detail</p></li>
+                        <li className='skills__list--item'><div className='skills__list--item--icon'>🖊️</div><p>Creative Thinking</p></li>
+                        <li className='skills__list--item'><div className='skills__list--item--icon'>❔</div><p>Responsiveness</p></li>
+                        <li className='skills__list--item'><div className='skills__list--item--icon'>🐧 </div><p>Adaptability</p></li>
+                        <li className='skills__list--item'><div className='skills__list--item--icon'>💼</div><p>Management</p></li>
                     </ul>
                 </div>
                 <div className='skills__div'>
