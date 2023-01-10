@@ -1,0 +1,96 @@
+@import '../styles/core/functions';
+@import '../styles/core/variables';
+
+
+.header{
+    //General properties
+    padding-top: rem(30);
+    //Display
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    //justify-content: center;
+    //align-items: center;
+    gap: rem(15);
+    &__hero{
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: rem(10);
+        &--img{
+            width: rem(140);
+            height: rem(140);
+            border-radius: 50%;
+            background-image: url('../images/avatar.png');
+            background-color: $color-grey;
+            background-position: center center;
+            background-size: cover;
+            opacity: 85%;
+        }
+        &--title{
+            font-size: rem(16);
+            padding-top: rem(10);
+        }
+        &--subtitle{
+            font-size: rem(10);
+            //background-color: $color-grey;
+            //color: $color-light;
+            //padding: rem(5);
+        }
+    }
+    &__nav{
+        margin-top: rem(20);
+        &--list{
+            width: fit-content;
+            list-style: none;
+            //Display
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            margin-left: rem(305);
+            gap: rem(300);
+            &--item{
+                text-decoration: none;
+                text-transform: lowercase;
+                font-size: rem(24);
+                color: $color-grey;
+            }
+        }
+    }
+}
+
+.active{
+    color: $color-dark;
+}
+
+/*
+.header{
+    height: 10vh;
+    padding-left: rem(50);
+    padding-right: rem(50);
+    //Set fixed position
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__title{
+        text-decoration: none;
+        font-size: rem(10);
+        font-weight: bold;
+        color: $color-dark;
+    }
+    &__nav{
+        
+        &--list{
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            &--item{
+                text-decoration: none;
+                font-size: rem(14);
+                color: $color-dark;
+            }
+        }
+    }
+}
+*/

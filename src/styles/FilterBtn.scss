@@ -1,0 +1,34 @@
+@import '../styles/core/functions';
+@import '../styles/core/variables';
+
+.filter{
+    height: rem(30);
+    position: relative;
+    &__check{
+        appearance: none;
+        position: absolute;
+    }
+    &__label{
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $color-dark;
+        background: $color-light;
+        border-radius: rem(2);
+        text-align:center;
+        width: rem(80);
+        height: rem(25);
+        font-size: rem(11);
+        text-transform: uppercase;
+        &:hover{
+            background-color: $color-dark;
+            color: $color-light;
+        }
+    }
+}
+
+.checked{
+    background-color: $color-dark;
+    color: $color-light;
+}

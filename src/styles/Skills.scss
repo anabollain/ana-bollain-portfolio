@@ -1,0 +1,39 @@
+@import '../styles/core/functions';
+@import '../styles/core/variables';
+
+.main__skills{
+    display: flex;
+    justify-content: center;
+}
+
+.skills{
+    margin-top: rem(50);
+    width: fit-content;
+    padding: rem(30);
+    display: flex;
+    justify-content: center;
+    gap: rem(100);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    border-radius: rem(20);
+    &__div{
+        display: flex;
+        flex-direction: column;
+    }
+    &__title{
+        font-size: rem(16);
+        margin-bottom: rem(30);
+    }
+    &__list{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: rem(10);
+        &--item{
+            font-size: rem(14);
+            &--bold{
+                font-weight: 600;
+            }
+        }
+    }
+
+}
