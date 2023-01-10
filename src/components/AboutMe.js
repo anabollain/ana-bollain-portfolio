@@ -20,8 +20,8 @@ function AboutMe(props) {
                 <a href={cvAnaBollain} download className='hero__info--load'>Download Resume</a>
                 <nav>
                     <ul className='hero__info--icon'>
-                        <li><a href="https://www.linkedin.com/in/ana-bollain/" className='hero__info--icon--link' target="_blank"><i className="fa-brands fa-linkedin-in"></i></a></li>
-                        <li><a href="https://github.com/anabollain" className='hero__info--icon--link' target="_blank"><i className="fa-brands fa-github-alt"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/ana-bollain/" className='hero__info--icon--link' target="_blank" rel="noreferrer"><i className="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="https://github.com/anabollain" className='hero__info--icon--link' target="_blank" rel="noreferrer"><i className="fa-brands fa-github-alt"></i></a></li>
                     </ul>
                 </nav>
             </div>   
