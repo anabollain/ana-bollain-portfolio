@@ -1,7 +1,9 @@
 @import '../styles/core/functions';
 @import '../styles/core/variables';
+@import '../styles/core/mediaqueries';
 
 .filter{
+    //General properties
     height: rem(30);
     position: relative;
     &__check{
@@ -9,19 +11,22 @@
         position: absolute;
     }
     &__label{
+        //General properties
         cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid $color-dark;
-        background: $color-light;
-        border-radius: rem(2);
+        font-size: rem(11);
+        text-transform: uppercase;
         text-align:center;
         width: rem(80);
         height: rem(25);
-        font-size: rem(11);
-        text-transform: uppercase;
+        border: 1px solid $color-dark;
+        background: $color-light;
+        border-radius: rem(2); 
+        //Display
+        display: flex;
+        justify-content: center;
+        align-items: center;
         &:hover{
+            //General properties
             background-color: $color-dark;
             color: $color-light;
         }
@@ -29,6 +34,7 @@
 }
 
 .checked{
+    //General properties
     background-color: $color-dark;
     color: $color-light;
 }

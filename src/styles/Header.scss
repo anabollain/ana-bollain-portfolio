@@ -1,5 +1,6 @@
 @import '../styles/core/functions';
 @import '../styles/core/variables';
+@import '../styles/core/mediaqueries';
 
 
 .header{
@@ -9,48 +10,87 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    //justify-content: center;
-    //align-items: center;
     gap: rem(15);
     &__hero{
+        //General properties
         text-decoration: none;
+        //Display
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: rem(10);
         &--img{
-            width: rem(140);
-            height: rem(140);
+            //General properties
+            width: rem(120);
+            height: rem(120);
             border-radius: 50%;
             background-image: url('../images/avatar.png');
             background-color: $color-grey;
             background-position: center center;
             background-size: cover;
             opacity: 80%;
+            @include mediaTablet(){
+                //General properties
+                width: rem(140);
+                height: rem(140);  
+            } 
         }
         &--title{
-            font-size: rem(17);
+            //General properties
+            font-size: rem(16);
             padding-top: rem(10);
+            @include mediaTablet(){
+                font-size: rem(17); 
+            } 
         }
         &--subtitle{
-            font-size: rem(11);
+            //General properties
+            font-size: rem(10);
+            @include mediaTablet(){
+                //General properties
+                font-size: rem(11); 
+            } 
         }
     }
     &__nav{
+        //General properties
         margin-top: rem(20);
+        @include mediaTablet(){
+            //General properties
+            margin-top: rem(30);
+        } 
         &--list{
-            width: fit-content;
+            //General properties
             list-style: none;
+            font-size: rem(18);
+            gap: rem(10);
             //Display
             display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            margin-left: rem(305);
-            gap: rem(300);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            @include mediaTablet(){
+                //General properties
+                font-size: rem(22);
+                //Display
+                flex-direction: row;
+                transform: translate(rem(-25));
+                gap: rem(180);
+                
+            } 
+            @include mediaDesktop(){
+                //General properties
+                font-size: rem(24);
+                //Display
+                flex-direction: row;
+                transform: translate(rem(-25));
+                gap: rem(280);
+                
+            } 
             &--item{
+                //General properties
                 text-decoration: none;
                 text-transform: lowercase;
-                font-size: rem(24);
                 color: $color-grey;
             }
         }
@@ -60,34 +100,3 @@
 .active{
     color: $color-dark;
 }
-
-/*
-.header{
-    height: 10vh;
-    padding-left: rem(50);
-    padding-right: rem(50);
-    //Set fixed position
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    &__title{
-        text-decoration: none;
-        font-size: rem(10);
-        font-weight: bold;
-        color: $color-dark;
-    }
-    &__nav{
-        
-        &--list{
-            list-style: none;
-            display: flex;
-            gap: 15px;
-            &--item{
-                text-decoration: none;
-                font-size: rem(14);
-                color: $color-dark;
-            }
-        }
-    }
-}
-*/

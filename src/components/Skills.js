@@ -8,20 +8,20 @@ function Skills() {
     return (
         <main className='main__skills'>
             <section className='skills'>
-                <div className='skills__div'>
+                <div className='skills__div--soft'>
                     <h3 className='skills__title'>Soft Skills</h3>
                     <ul className='skills__list'>
-                        <li className='skills__list--item'><div className='skills__list--item--icon'>👐</div><p>Teamwork</p></li>
-                        <li className='skills__list--item'><div className='skills__list--item--icon'>💁</div><p>Empathy</p></li>
-                        <li className='skills__list--item'><div className='skills__list--item--icon'>🚩</div><p>Problem Solving</p></li>
-                        <li className='skills__list--item'><div className='skills__list--item--icon'>🔹</div><p>Attention to detail</p></li>
-                        <li className='skills__list--item'><div className='skills__list--item--icon'>🖊️</div><p>Creative Thinking</p></li>
-                        <li className='skills__list--item'><div className='skills__list--item--icon'>❔</div><p>Responsiveness</p></li>
-                        <li className='skills__list--item'><div className='skills__list--item--icon'>🐧 </div><p>Adaptability</p></li>
-                        <li className='skills__list--item'><div className='skills__list--item--icon'>💼</div><p>Management</p></li>
+                        <li className='skills__list--soft'><div className='skills__list--soft--icon'>👐</div><p>Teamwork</p></li>
+                        <li className='skills__list--soft'><div className='skills__list--soft--icon'>💁</div><p>Empathy</p></li>
+                        <li className='skills__list--soft'><div className='skills__list--soft--icon'>🚩</div><p>Problem Solving</p></li>
+                        <li className='skills__list--soft'><div className='skills__list--soft--icon'>🔹</div><p>Attention to detail</p></li>
+                        <li className='skills__list--soft'><div className='skills__list--soft--icon'>🖊️</div><p>Creative Thinking</p></li>
+                        <li className='skills__list--soft'><div className='skills__list--soft--icon'>❔</div><p>Responsiveness</p></li>
+                        <li className='skills__list--soft'><div className='skills__list--soft--icon'>🐧 </div><p>Adaptability</p></li>
+                        <li className='skills__list--soft'><div className='skills__list--soft--icon'>💼</div><p>Management</p></li>
                     </ul>
                 </div>
-                <div className='skills__div'>
+                <div className='skills__div--tech'>
                     <h3 className='skills__title'>Technical Skills</h3>
                     <ul className='skills__list'>
                         <li className='skills__list--item'>Layout: <span className='skills__list--item--bold'>HTML5, CSS3, Sass, Responsive Design, Flexbox, CSS Grid</span></li>

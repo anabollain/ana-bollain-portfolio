@@ -1,29 +1,39 @@
 @import '../styles/core/functions';
 @import '../styles/core/variables';
+@import '../styles/core/mediaqueries';
 
 .works{
     &__list{
         &--item{
-            width: rem(310);
-            height: rem(280);
+            //General properties
+            width: rem(280);
+            height: rem(300);
             box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
             position: relative;
+            @include mediaTablet(){
+                //General properties
+                width: rem(310);
+                height: rem(280);
+            }
             &:hover{
                 box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
             }
             &--link{
+                //General properties
                 text-decoration: none;
                 color: black;
             }
             &--art{
+                //Display
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
             }
             &--img{
+                //General properties
                 width: 100%;
-                height: rem(200);
+                height: rem(220);
                 margin-bottom: rem(15);
                 object-fit: cover;
                 object-position: center;
@@ -32,8 +42,12 @@
                     padding: rem(15);
                     position: top;
                 }
+                @include mediaTablet(){
+                    height: rem(200);
+                }
             }
             &--title{
+                //General properties
                 font-size: rem(14);
                 text-transform: uppercase;
                 margin-bottom: rem(5);
@@ -43,32 +57,36 @@
                 
             }
             &--nav{
+                //General properties
                 list-style: none;
                 font-size: rem(16);
+                width: rem(60);
+                height: rem(30);
+                background-color: white;
+                border-bottom-right-radius: 10px;
+                padding: rem(5);
+                //Display
                 display: flex;
-                //flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 gap: rem(15);
+                //Position
                 position: absolute;
-                width: rem(60);
-                height: rem(30);
-                padding: rem(5);
                 top: rem(0);
                 left: rem(0);
-                background-color: white;
-                border-bottom-right-radius: 10px;
             }
         }
     }
 }
 
 .works__nav{
+    //General properties
     text-decoration: none;
+    color: $color-gunmetal;
+    //Display
     display: flex;
     justify-content: center;
     align-items: center;
-    color: $color-gunmetal;
     &:hover{
         color: $color-extra;
     }

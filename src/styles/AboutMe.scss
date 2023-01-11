@@ -1,45 +1,73 @@
 @import '../styles/core/functions';
 @import '../styles/core/variables';
+@import '../styles/core/mediaqueries';
+
 
 .hero{
     //General properties
-    height: rem(350);
-    margin-top: rem(40);
+    margin-top: rem(30);
     //Display
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding-left: rem(300);
-    padding-right: rem(80);
-    gap: rem(50);
-    
-    //align-items: center;
+    gap: rem(30);
+    @include mediaTablet(){
+        //General properties
+        height: rem(300);
+        //Display
+        flex-direction: row;
+        padding: rem(30);
+    }
     &__info{
-        width: 60vw;
+        //General properties
+        padding: rem(22);
         //Display
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: rem(14);
+        gap: rem(20);
+        @include mediaTablet(){
+            //General properties
+            width: rem(500);
+            //Display
+            gap: rem(12);
+        }
+        @include mediaDesktop(){
+            //General properties
+            width: rem(600);
+            //Display
+            gap: rem(12);
+        }
         &--title{
-            font-size: rem(26);
+            //General properties
+            font-size: rem(25);
             font-weight: 800;
         }
         &--subtitle{
-            font-size: rem(14);
+            //General properties
+            font-size: rem(13);
             font-weight: 600;
         }
         &--text{
+            //General properties
             list-style: none;
-            font-size: rem(13);
-            width: rem(600);
+            font-size: rem(12);
+            //Display
+            display: flex;
+            flex-direction: column;
+            gap: rem(10);
+            @include mediaTablet(){
+                gap: rem(0);
+            }
         }
         &--btn{
+            //General properties
             width: rem(100);
             height: rem(40);
             color: $color-light;
             background-color: $color-dark;
-            font-size: rem(12);
+            font-size: rem(11.5);
             text-decoration: none;
             margin-top: rem(5);
             //Display
@@ -48,6 +76,7 @@
             align-items: center;
         }   
         &--load{
+            //General properties
             text-decoration: none;
             color: $color-light;
             background-color: $color-dark;
@@ -59,10 +88,12 @@
             }
         }     
             &--icon{
+                //General properties
                 cursor: pointer;
                 list-style: none;
                 font-size: rem(14);
                 padding: rem(5);
+                //Display
                 display: flex;
                 gap: rem(15);
                 &--link{
@@ -74,11 +105,22 @@
             }
     }
     &__img{
-        width: rem(310);
-        height: rem(310);
+        //General properties
+        width: rem(280);
+        height: rem(280);
         background-image: url('../images/ana-bollain.jpg');
         background-position: top center;
         background-size: cover;
         opacity: 85%;
+        @include mediaTablet(){
+            //General properties
+            width: rem(260);
+            height: rem(260);
+        }
+        @include mediaTablet(){
+            //General properties
+            width: rem(280);
+            height: rem(280);
+        }
     }
 }

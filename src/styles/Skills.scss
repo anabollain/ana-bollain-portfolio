@@ -1,40 +1,104 @@
 @import '../styles/core/functions';
 @import '../styles/core/variables';
+@import '../styles/core/mediaqueries';
 
 .main__skills{
+    //Display
     display: flex;
     justify-content: center;
 }
 
 .skills{
-    margin-top: rem(50);
+    //General properties
+    margin-top: rem(30);
     width: fit-content;
-    padding: rem(30);
-    display: flex;
-    justify-content: center;
-    gap: rem(100);
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
     border-radius: rem(20);
+    text-align: center;
+    padding: rem(30);
+    margin-bottom: rem(30);
+    //Display
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: rem(40);
+    @include mediaTablet(){
+        //General properties
+        text-align: start;
+        width: rem(700);
+        padding: rem(25) rem(40) rem(25) rem(40);
+        //Display
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;   
+    }
+    @include mediaDesktop(){
+        //General properties
+        width: rem(800);
+        height: rem(350);
+    }
     &__div{
+        //Display
         display: flex;
         flex-direction: column;
+        &--soft{
+            width: rem(220);
+            @include mediaTablet(){
+                width: rem(250);
+            } 
+        }
+        &--tech{
+            width: rem(220);
+            @include mediaTablet(){
+                width: rem(600);
+            }
+        }
     }
     &__title{
-        font-size: rem(16);
+        //General properties
+        font-size: rem(18);
         margin-bottom: rem(30);
+        @include mediaTablet(){
+            font-size: rem(16);
+        }
     }
     &__list{
+        //General properties
         list-style: none;
+        //Display
         display: flex;
         flex-direction: column;
-        gap: rem(5);
-        &--item{
+        gap: rem(20);
+        @include mediaTablet(){
+            //General properties
+            font-size: rem(16);
+            //Display
+            gap: rem(13);
+        }
+        &--soft{
             font-size: rem(14);
-            display: flex;
-            gap: rem(15);
-            &--icon{
-                width: rem(25);
+            @include mediaTablet(){
+                //Display
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
             }
+            &--icon{
+                //General properties
+                width: rem(25);
+                padding-bottom: rem(15);
+                margin: 0 auto;
+                @include mediaTablet(){
+                    //General properties
+                    padding: rem(0);
+                    width: rem(40);
+                    margin: 0 0;
+                }
+            }
+        }
+        &--item{
+            //General properties
+            font-size: rem(14);
             &--bold{
                 font-weight: 600;
             }

@@ -1,7 +1,7 @@
 import '../styles/AboutMe.scss';
 import cvAnaBollain from '../data/resumeAnaBollain.pdf';
 
-function AboutMe(props) {
+function AboutMe() {
 
   return (
     <main>
@@ -15,7 +15,6 @@ function AboutMe(props) {
                     <li>🎉  I've just finished a Front-end Development Bootcamp in Adalab</li>
                     <li>🔭  I'm looking for a job to gain experience and continue learning</li>
                     <li>🌱  I’m currently widening my knowledge of React and Node JS</li>
-                    <li>👯  I’m looking to collaborate on new challenges and side projects</li>
                 </ul>
                 <a href={cvAnaBollain} download className='hero__info--load'>Download Resume</a>
                 <nav>
@@ -29,9 +28,5 @@ function AboutMe(props) {
     </main>
     );
 }
-
-AboutMe.propTypes = {
-
-};
 
 export default AboutMe;

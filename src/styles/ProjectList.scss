@@ -1,22 +1,33 @@
 @import '../styles/core/functions';
 @import '../styles/core/variables';
+@import '../styles/core/mediaqueries';
 
 .works{
+    //General properties
     margin-top: rem(40);
     margin-bottom: rem(60);
+    //Display
     display: flex;
     flex-direction: column;
     justify-content: center;
     &__form{
+        //General properties
         width: 100vw;
         margin-bottom: rem(40);
+        //Display
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         gap: rem(20);
+        @include mediaTablet(){
+            flex-wrap: nowrap;
+        } 
     }
     &__list{
+        //General properties
         list-style: none;
+        //Display
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
