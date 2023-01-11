@@ -6,6 +6,9 @@
 .hero{
     //General properties
     margin-top: rem(30);
+    margin-bottom: rem(30);
+    padding-left: rem(30);
+    padding-right: rem(30);
     //Display
     display: flex;
     flex-direction: column;
@@ -17,11 +20,8 @@
         height: rem(300);
         //Display
         flex-direction: row;
-        padding: rem(30);
     }
     &__info{
-        //General properties
-        padding: rem(22);
         //Display
         display: flex;
         flex-direction: column;
@@ -106,8 +106,8 @@
     }
     &__img{
         //General properties
-        width: rem(280);
-        height: rem(280);
+        width: rem(260);
+        height: rem(260);
         background-image: url('../images/ana-bollain.jpg');
         background-position: top center;
         background-size: cover;
