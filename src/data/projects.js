@@ -91,6 +91,26 @@ const projectData = [
     },
     {
         "id": 10,
+        "type": "Javascript",
+        "name": "Drum Kit",
+        "desc": "Personal | Javascript · HTML5 · CSS3 | Desktop",
+        "version" : "Desktop",
+        "photo": require("../images/drum-kit.JPG"),
+        "githubURL": "https://github.com/anabollain/javascript-personal-project-drum-kit",
+        "mainURL": "https://anabollain.github.io/javascript-personal-project-drum-kit/"
+    },
+    {
+        "id": 11,
+        "type": "Javascript",
+        "name": "Clock",
+        "desc": "Personal | Javascript · HTML5 · CSS3 | Desktop",
+        "version" : "Desktop",
+        "photo": require("../images/clock-js.JPG"),
+        "githubURL": "https://github.com/anabollain/javascript-personal-project-clock",
+        "mainURL": "https://anabollain.github.io/javascript-personal-project-clock/"
+    },
+    {
+        "id": 12,
         "type": "Layout",
         "name": "Google",
         "desc": "Personal | HTML5 · CSS3 | Desktop",
@@ -100,7 +120,7 @@ const projectData = [
         "mainURL": "https://anabollain.github.io/platzi-html-css-personal-project-google/"
     },
     {
-        "id": 11,
+        "id": 13,
         "type": "Layout",
         "name": "Anonymous Proxy",
         "desc": "Personal | HTML5 · CSS3 | Responsive",
@@ -110,7 +130,7 @@ const projectData = [
         "mainURL": "https://anabollain.github.io/adalab-html-css-personal-final-project-anonymous-proxy/"
     },
     {
-        "id": 12,
+        "id": 14,
         "type": "Layout",
         "name": "Check the Best Food",
         "desc": "Personal | HTML5 · CSS3 · CSS Grid | Desktop",
