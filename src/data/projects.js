@@ -112,12 +112,12 @@ const projectData = [
     {
         "id": 12,
         "type": "Layout",
-        "name": "Google",
-        "desc": "Personal | HTML5 · CSS3 | Desktop",
+        "name": "Flex Gallery",
+        "desc": "Personal | HTML5 · CSS3 . Javascript| Responsive",
         "version" : "Desktop",
-        "photo": require("../images/google.JPG"),
-        "githubURL": "https://github.com/anabollain/platzi-html-css-personal-project-google",
-        "mainURL": "https://anabollain.github.io/platzi-html-css-personal-project-google/"
+        "photo": require("../images/flexbox.JPG"),
+        "githubURL": "https://github.com/anabollain/javascript-personal-project-flexbox",
+        "mainURL": "https://anabollain.github.io/javascript-personal-project-flexbox/"
     },
     {
         "id": 13,
@@ -132,12 +132,33 @@ const projectData = [
     {
         "id": 14,
         "type": "Layout",
+        "name": "Google",
+        "desc": "Personal | HTML5 · CSS3 | Desktop",
+        "version" : "Desktop",
+        "photo": require("../images/google.JPG"),
+        "githubURL": "https://github.com/anabollain/platzi-html-css-personal-project-google",
+        "mainURL": "https://anabollain.github.io/platzi-html-css-personal-project-google/"
+    },
+    
+    {
+        "id": 15,
+        "type": "Layout",
         "name": "Check the Best Food",
         "desc": "Personal | HTML5 · CSS3 · CSS Grid | Desktop",
         "version" : "Desktop",
         "photo": require("../images/best-food.JPG"),
         "githubURL": "https://github.com/anabollain/platzi-css-grid-basic-personal-project-food",
         "mainURL": "https://anabollain.github.io/platzi-css-grid-basic-personal-project-food/"
+    },
+    {
+        "id": 16,
+        "type": "Javascript",
+        "name": "CSS Variables",
+        "desc": "Personal | Javascript · HTML5 · CSS3 | Desktop",
+        "version" : "Desktop",
+        "photo": require("../images/homer.JPG"),
+        "githubURL": "https://github.com/anabollain/javascript-personal-project-css-variables",
+        "mainURL": "https://anabollain.github.io/javascript-personal-project-css-variables/"
     }
 ]
 
