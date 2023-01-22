@@ -3,7 +3,7 @@ import React from 'react';
 import { useState } from 'react';
 //services
 import projectData from '../data/projects';
-import ls from '../services/localStorage';
+//import ls from '../services/localStorage';
 //components
 import Header from './Header';
 import ProjectList from './ProjectList';
@@ -18,12 +18,11 @@ import '../styles/App.scss';
 function App() {
 
   //STATE VARIABLES
-  const [selectedType, setSelectedType] = useState(ls.get('input', 'All'));
+  const [selectedType, setSelectedType] = useState( 'All');
 
   //EVENT FUNCTIONS
   const handleFilterProject = (value) => {
     setSelectedType(value);
-    ls.set('input', value);
   }
 
   //RENDER FUNCTIONS
