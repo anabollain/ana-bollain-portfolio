@@ -1,7 +1,7 @@
-//Styles
-import '../styles/AboutMe.scss';
 //Data
 import cvAnaBollain from '../data/resumeAnaBollain.pdf';
+//Styles
+import '../styles/AboutMe.scss';
 
 function AboutMe() {
 
