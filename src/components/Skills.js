@@ -1,7 +1,6 @@
 //styles
 import '../styles/Skills.scss';
 
-
 function Skills() {
 
     //RETURN

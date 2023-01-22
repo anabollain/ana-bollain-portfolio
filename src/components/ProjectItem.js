@@ -3,6 +3,7 @@ import '../styles/ProjectItem.scss';
 
 function ProjectItem({ eachProject }) {
 
+    //RETURN
     return (
         <li className='works__list--item'>
             <a href={eachProject.mainURL} target='_blank' className='works__list--item--link' rel="noreferrer">
@@ -21,9 +22,5 @@ function ProjectItem({ eachProject }) {
         </li>
     );
 }
-
-ProjectItem.propTypes = {
-
-};
 
 export default ProjectItem;

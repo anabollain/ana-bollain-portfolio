@@ -75,8 +75,7 @@
                 //Display
                 flex-direction: row;
                 transform: translate(rem(-25));
-                gap: rem(180);
-                
+                gap: rem(180);    
             } 
             @include mediaDesktop(){
                 //General properties
@@ -85,7 +84,6 @@
                 flex-direction: row;
                 transform: translate(rem(-25));
                 gap: rem(280);
-                
             } 
             &--item{
                 //General properties
