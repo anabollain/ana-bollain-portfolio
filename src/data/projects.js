@@ -159,6 +159,86 @@ const projectData = [
         "photo": require("../images/homer.JPG"),
         "githubURL": "https://github.com/anabollain/javascript-personal-project-css-variables",
         "mainURL": "https://anabollain.github.io/javascript-personal-project-css-variables/"
+    }, 
+    {
+        "id": 17,
+        "type": "Javascript",
+        "name": "HTML5 Canvas",
+        "desc": "Personal | Javascript · HTML5 · CSS3 | Desktop",
+        "version" : "Desktop",
+        "photo": require("../images/html5-canvas.jpg"),
+        "githubURL": "https://github.com/anabollain/javascript-personal-project-HTML5-canvas",
+        "mainURL": "https://anabollain.github.io/javascript-personal-project-HTML5-canvas/"
+    },
+    {
+        "id": 18,
+        "type": "Javascript",
+        "name": "Type Ahead",
+        "desc": "Personal | Javascript · HTML5 · CSS3 | Desktop",
+        "version" : "Desktop",
+        "photo": require("../images/type-ahead.JPG"),
+        "githubURL": "https://github.com/anabollain/javascript-personal-project-type-ahead",
+        "mainURL": "https://anabollain.github.io/javascript-personal-project-type-ahead/"
+    },
+    {
+        "id": 19,
+        "type": "Javascript",
+        "name": "Shift & Checkboxes",
+        "desc": "Personal | Javascript · HTML5 · CSS3 | Desktop",
+        "version" : "Desktop",
+        "photo": require("../images/shift-checkboxes.JPG"),
+        "githubURL": "https://github.com/anabollain/javascript-personal-project-shift-checkbox",
+        "mainURL": "https://anabollain.github.io/javascript-personal-project-shift-checkbox/"
+    },
+    {
+        "id": 20,
+        "type": "Javascript",
+        "name": "Custom HTML5 Video Player",
+        "desc": "Personal | Javascript · HTML5 · CSS3 | Desktop",
+        "version" : "Desktop",
+        "photo": require("../images/video-player.JPG"),
+        "githubURL": "https://github.com/anabollain/javascript-personal-project-video-player",
+        "mainURL": "https://anabollain.github.io/javascript-personal-project-video-player/"
+    },
+    {
+        "id": 21,
+        "type": "Javascript",
+        "name": "Key Sequence Detection",
+        "desc": "Personal | Javascript · HTML5 · CSS3 | Desktop",
+        "version" : "Desktop",
+        "photo": require("../images/frida.JPG"),
+        "githubURL": "https://github.com/anabollain/javascript-personal-project-key-sequence",
+        "mainURL": "https://anabollain.github.io/javascript-personal-project-key-sequence/"
+    },
+    {
+        "id": 22,
+        "type": "Javascript",
+        "name": "Slide In on Scroll",
+        "desc": "Personal | Javascript · HTML5 · CSS3 | Desktop",
+        "version" : "Desktop",
+        "photo": require("../images/slide-in-on-scroll.JPG"),
+        "githubURL": "https://github.com/anabollain/javascript-personal-project-slide-in-on-scroll",
+        "mainURL": "https://anabollain.github.io/javascript-personal-project-slide-in-on-scroll/"
+    },
+    {
+        "id": 23,
+        "type": "Javascript",
+        "name": "TODO List",
+        "desc": "Personal | Javascript · HTML5 · CSS3 | Desktop",
+        "version" : "Desktop",
+        "photo": require("../images/todo-list.JPG"),
+        "githubURL": "https://github.com/anabollain/javascript-personal-project-local-storage",
+        "mainURL": "https://anabollain.github.io/javascript-personal-project-local-storage/"
+    },
+    {
+        "id": 24,
+        "type": "Javascript",
+        "name": "Mouse Shadow",
+        "desc": "Personal | Javascript · HTML5 · CSS3 | Desktop",
+        "version" : "Desktop",
+        "photo": require("../images/mouse-shadow.JPG"),
+        "githubURL": "https://github.com/anabollain/javascript-personal-project-mouse-shadow",
+        "mainURL": "https://anabollain.github.io/javascript-personal-project-mouse-shadow/"
     }
 ]
 
