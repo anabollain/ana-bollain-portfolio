@@ -128,20 +128,9 @@ const projectData = [
         "photo": require("../images/anonymous-proxy.JPG"),
         "githubURL": "https://github.com/anabollain/adalab-html-css-personal-final-project-anonymous-proxy",
         "mainURL": "https://anabollain.github.io/adalab-html-css-personal-final-project-anonymous-proxy/"
-    },
+    },    
     {
         "id": 14,
-        "type": "Layout",
-        "name": "Google",
-        "desc": "Personal | HTML5 · CSS3 | Desktop",
-        "version" : "Desktop",
-        "photo": require("../images/google.JPG"),
-        "githubURL": "https://github.com/anabollain/platzi-html-css-personal-project-google",
-        "mainURL": "https://anabollain.github.io/platzi-html-css-personal-project-google/"
-    },
-    
-    {
-        "id": 15,
         "type": "Layout",
         "name": "Check the Best Food",
         "desc": "Personal | HTML5 · CSS3 · CSS Grid | Desktop",
@@ -151,7 +140,7 @@ const projectData = [
         "mainURL": "https://anabollain.github.io/platzi-css-grid-basic-personal-project-food/"
     },
     {
-        "id": 16,
+        "id": 15,
         "type": "Javascript",
         "name": "CSS Variables",
         "desc": "Personal | Javascript · HTML5 · CSS3 | Desktop",
@@ -161,7 +150,7 @@ const projectData = [
         "mainURL": "https://anabollain.github.io/javascript-personal-project-css-variables/"
     }, 
     {
-        "id": 17,
+        "id": 16,
         "type": "Javascript",
         "name": "HTML5 Canvas",
         "desc": "Personal | Javascript · HTML5 · CSS3 | Desktop",
@@ -171,7 +160,7 @@ const projectData = [
         "mainURL": "https://anabollain.github.io/javascript-personal-project-HTML5-canvas/"
     },
     {
-        "id": 18,
+        "id": 17,
         "type": "Javascript",
         "name": "Type Ahead",
         "desc": "Personal | Javascript · HTML5 · CSS3 | Desktop",
@@ -181,7 +170,7 @@ const projectData = [
         "mainURL": "https://anabollain.github.io/javascript-personal-project-type-ahead/"
     },
     {
-        "id": 19,
+        "id": 18,
         "type": "Javascript",
         "name": "Shift & Checkboxes",
         "desc": "Personal | Javascript · HTML5 · CSS3 | Desktop",
@@ -191,7 +180,7 @@ const projectData = [
         "mainURL": "https://anabollain.github.io/javascript-personal-project-shift-checkbox/"
     },
     {
-        "id": 20,
+        "id": 19,
         "type": "Javascript",
         "name": "Custom HTML5 Video Player",
         "desc": "Personal | Javascript · HTML5 · CSS3 | Desktop",
@@ -201,7 +190,7 @@ const projectData = [
         "mainURL": "https://anabollain.github.io/javascript-personal-project-video-player/"
     },
     {
-        "id": 21,
+        "id": 20,
         "type": "Javascript",
         "name": "Key Sequence Detection",
         "desc": "Personal | Javascript · HTML5 · CSS3 | Desktop",
@@ -211,7 +200,7 @@ const projectData = [
         "mainURL": "https://anabollain.github.io/javascript-personal-project-key-sequence/"
     },
     {
-        "id": 22,
+        "id": 21,
         "type": "Javascript",
         "name": "Slide In on Scroll",
         "desc": "Personal | Javascript · HTML5 · CSS3 | Desktop",
@@ -221,7 +210,7 @@ const projectData = [
         "mainURL": "https://anabollain.github.io/javascript-personal-project-slide-in-on-scroll/"
     },
     {
-        "id": 23,
+        "id": 22,
         "type": "Javascript",
         "name": "TODO List",
         "desc": "Personal | Javascript · HTML5 · CSS3 | Desktop",
@@ -231,7 +220,7 @@ const projectData = [
         "mainURL": "https://anabollain.github.io/javascript-personal-project-local-storage/"
     },
     {
-        "id": 24,
+        "id": 23,
         "type": "Javascript",
         "name": "Mouse Shadow",
         "desc": "Personal | Javascript · HTML5 · CSS3 | Desktop",
