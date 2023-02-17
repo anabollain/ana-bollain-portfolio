@@ -228,6 +228,16 @@ const projectData = [
         "photo": require("../images/mouse-shadow.JPG"),
         "githubURL": "https://github.com/anabollain/javascript-personal-project-mouse-shadow",
         "mainURL": "https://anabollain.github.io/javascript-personal-project-mouse-shadow/"
+    },
+    {
+        "id": 24,
+        "type": "Javascript",
+        "name": "Photo Booth",
+        "desc": "Personal | Javascript · HTML5 · CSS3 | Desktop",
+        "version" : "Desktop",
+        "photo": require("../images/photo-booth.JPG"),
+        "githubURL": "https://github.com/anabollain/javascript-personal-project-photo-booth",
+        "mainURL": "https://anabollain.github.io/javascript-personal-project-photo-booth/"
     }
 ]
 
