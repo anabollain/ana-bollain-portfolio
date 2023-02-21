@@ -238,6 +238,26 @@ const projectData = [
         "photo": require("../images/photo-booth.JPG"),
         "githubURL": "https://github.com/anabollain/javascript-personal-project-photo-booth",
         "mainURL": "https://anabollain.github.io/javascript-personal-project-photo-booth/"
+    },
+    {
+        "id": 25,
+        "type": "Javascript",
+        "name": "Speech Recognition",
+        "desc": "Personal | Javascript · HTML5 · CSS3 | Desktop",
+        "version" : "Desktop",
+        "photo": require("../images/speech-recognition.JPG"),
+        "githubURL": "https://github.com/anabollain/javascript-personal-project-speech-recognition",
+        "mainURL": "https://anabollain.github.io/javascript-personal-project-speech-recognition/"
+    },
+    {
+        "id": 26,
+        "type": "Javascript",
+        "name": "Voice Changer",
+        "desc": "Personal | Javascript · HTML5 · CSS3 | Desktop",
+        "version" : "Desktop",
+        "photo": require("../images/voice-changer.JPG"),
+        "githubURL": "https://github.com/anabollain/javascript-personal-project-voice-changer",
+        "mainURL": "https://anabollain.github.io/javascript-personal-project-voice-changer/"
     }
 ]
 
