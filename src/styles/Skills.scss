@@ -45,7 +45,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: rem(60);
+    gap: rem(100);
     @include mediaTablet(){
         //General properties
         text-align: start;

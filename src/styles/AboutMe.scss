@@ -7,8 +7,8 @@
     //General properties
     margin-top: rem(80);
     margin-bottom: rem(30);
-    padding-left: rem(30);
-    padding-right: rem(30);
+    padding-left: rem(60);
+    padding-right: rem(60);
     //Display
     display: flex;
     flex-direction: column;
@@ -18,6 +18,7 @@
     @include mediaTablet(){
         //General properties
         height: 90vh;
+        padding-left: rem(30);
         padding-right: rem(0);
         margin-top: rem(60);
         margin-bottom: rem(0);
@@ -29,7 +30,7 @@
         gap: rem(200);
     }
     &__info{
-        margin-top: rem(40);
+        margin-top: rem(90);
         //Display
         display: flex;
         flex-direction: column;
@@ -94,7 +95,7 @@
                 padding: rem(5);
                 //Display
                 display: flex;
-                gap: rem(15);
+                gap: rem(20);
                 &--link{
                     //General properties
                     color: $color-dark;
@@ -106,8 +107,6 @@
                 @include mediaTablet(){
                     //General properties
                     font-size: rem(15);
-                    //Display
-                    gap: rem(20);
                 }
             }
     }

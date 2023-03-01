@@ -11,7 +11,7 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap: rem(15);
+        gap: rem(20);
         @include mediaTablet(){
             //General properties
             height: 25vh;

@@ -48,12 +48,13 @@
         &--img{
             //General properties
             width: 100vw;
-            height: rem(400);
+            height: rem(450);
             background: url('../images/contact-v2.jpg');
             background-position: center center;
             background-size: cover;
             @include mediaTablet(){
                 width: rem(300);
+                height: rem(400);
             }
         }
         &--nav{
@@ -62,11 +63,12 @@
             //Display
             display: flex;
             justify-content: center;
-            gap: rem(20);
+            gap: rem(30);
             @include mediaTablet(){
                 //Display
                 flex-direction: column;
                 justify-content: flex-start;
+                gap: rem(20);
             }
             &--link{
                 //General properties
