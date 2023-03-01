@@ -1,69 +1,76 @@
 @import '../styles/core/functions';
 @import '../styles/core/variables';
 @import '../styles/core/mediaqueries';
-
+@import '../styles/core/mixins';
 
 .header{
     //General properties
-    padding-top: rem(30);
+    height: 10vh;
+    width: 100vw;
+    background-color: white;
+    z-index: 60;
     //Display
     display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    gap: rem(15);
-    &__hero{
+    justify-content: space-between;
+    align-items: center;
+    padding-right: rem(15);
+    padding-left: rem(15);
+    //Position
+    position: fixed;
+    top: 0;
+    @include mediaTablet(){
         //General properties
-        text-decoration: none;
-        //Display
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: rem(10);
-        &--img{
+        padding-right: rem(50);
+        padding-left: rem(50);
+    } 
+    &__title{
             //General properties
-            width: rem(120);
-            height: rem(120);
-            border-radius: 50%;
-            background-image: url('../images/avatar.png');
-            background-color: $color-grey;
-            background-position: center center;
-            background-size: cover;
-            opacity: 80%;
+            @include linkReset ();
+            font-size: rem(20);
             @include mediaTablet(){
                 //General properties
-                width: rem(140);
-                height: rem(140);  
+                font-size: rem(26); 
             } 
         }
-        &--title{
-            //General properties
-            font-size: rem(16);
-            padding-top: rem(10);
-            @include mediaTablet(){
-                font-size: rem(17); 
-            } 
-        }
-        &--subtitle{
-            //General properties
-            font-size: rem(10);
-            @include mediaTablet(){
-                //General properties
-                font-size: rem(11); 
-            } 
-        }
+    &__icon{
+        //General properties
+        cursor: pointer;
+        padding: rem(5);
+        @include mediaTablet(){
+            //Display
+            display: none;
+        } 
     }
     &__nav{
         //General properties
-        margin-top: rem(20);
+        cursor: pointer;
+        width: 100%;
+        height: 90vh;
+        background-color: white;
+        padding-top: rem(60);
+        //Position
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        z-index: 50;
+        //Display
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
         @include mediaTablet(){
             //General properties
-            margin-top: rem(30);
+            width: fit-content;
+            height: 10vh;
+            padding-top: rem(0);
+            //Position
+            top: 4vh;
+            right: rem(50);
         } 
         &--list{
             //General properties
             list-style: none;
-            font-size: rem(18);
-            gap: rem(10);
+            font-size: rem(16);
+            gap: rem(40);
             //Display
             display: flex;
             flex-direction: column;
@@ -73,28 +80,41 @@
                 //General properties
                 font-size: rem(22);
                 //Display
-                flex-direction: row;
-                transform: translate(rem(-25));
-                gap: rem(180);    
+                flex-direction: row;  
             } 
             @include mediaDesktop(){
                 //General properties
-                font-size: rem(24);
+                font-size: rem(16);
                 //Display
                 flex-direction: row;
-                transform: translate(rem(-25));
-                gap: rem(280);
             } 
             &--item{
                 //General properties
                 text-decoration: none;
-                text-transform: lowercase;
-                color: $color-grey;
+                color: $color-grey-dark;
+                font-size: rem(16);
             }
         }
     }
 }
 
 .active{
+    //General properties
     color: $color-dark;
+    padding-bottom: rem(3);
+    border-bottom: 1px solid $color-dark;
+}
+
+.header__title.active{
+    //General properties
+    border: none;
+}
+
+.js-hidden{
+    //Display
+    display: none;
+    @include mediaTablet(){
+        //Display
+        display: block;
+    } 
 }

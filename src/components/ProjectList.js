@@ -1,5 +1,5 @@
 //components
-import FilterBtn from './FilterBtn';
+import Filters from './Filters';
 import ProjectItem from './ProjectItem';
 //styles
 import '../styles/ProjectList.scss'
@@ -17,13 +17,7 @@ function Landing(props) {
     return (
         <main>
             <section className='works'>
-                <form className='works__form'>
-                    <FilterBtn text='All' handleClickFilter={props.handleFilterProject} checked={props.type === 'All'}></FilterBtn>
-                    <FilterBtn text='Layout' handleClickFilter={props.handleFilterProject} checked={props.type === 'Layout'}></FilterBtn>
-                    <FilterBtn text='Javascript' handleClickFilter={props.handleFilterProject} checked={props.type === 'Javascript'}></FilterBtn>
-                    <FilterBtn text='React' handleClickFilter={props.handleFilterProject} checked={props.type === 'React'}></FilterBtn>
-                    <FilterBtn text='Node' handleClickFilter={props.handleFilterProject} checked={props.type === 'Node'}></FilterBtn>
-                </form>
+                <Filters handleFilterProject={props.handleFilterProject} type={props.type}/>
                 <ul className='works__list'>
                     {renderProjects()}
                 </ul>

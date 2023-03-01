@@ -1,0 +1,95 @@
+@import '../styles/core/functions';
+@import '../styles/core/variables';
+@import '../styles/core/mediaqueries';
+
+
+.contact{
+    //General properties
+    margin-top: rem(80);
+    //Display
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: rem(30);
+    //Position
+    position: relative;
+    @include mediaTablet(){
+        //General properties
+        height: 90vh;
+        gap: rem(50);
+    }
+    &__title{
+        //General properties
+        font-size: rem(26);
+        width: fit-content;
+        text-align: center;
+        white-space: nowrap;
+        margin: 0 auto;
+        //Position
+        position: absolute;
+        top: rem(20);
+        overflow: hidden;
+        //Animation
+        animation: 
+        typing 3.5s steps(40, end);
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        @include mediaTablet(){
+            //General properties
+            font-size: rem(30);
+            position: initial;
+        }
+    }
+    &__info{
+        //Display
+        display: flex;
+        flex-direction: column;
+        gap: rem(30);
+        @include mediaTablet(){
+            //Display
+            flex-direction: row;
+            gap: rem(70);
+        }
+        &--img{
+            //General properties
+            width: 100vw;
+            height: rem(400);
+            background: url('../images/contact-v2.jpg');
+            background-position: center center;
+            background-size: cover;
+            @include mediaTablet(){
+                width: rem(300);
+            }
+        }
+        &--nav{
+            //General properties
+            list-style: none;
+            //Display
+            display: flex;
+            justify-content: center;
+            gap: rem(20);
+            @include mediaTablet(){
+                //Display
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+            &--link{
+                //General properties
+                text-decoration: none;
+                color: $color-dark;
+                font-size: rem(14);
+                &:hover{
+                    //General properties
+                    border-bottom: 1px solid $color-dark;
+                }
+                @include mediaTablet(){
+                    //General properties
+                    font-size: rem(16);
+                }
+            }
+        }
+    }
+}

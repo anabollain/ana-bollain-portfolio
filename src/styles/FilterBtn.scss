@@ -7,34 +7,44 @@
     height: rem(30);
     position: relative;
     &__check{
+        //General properties
         appearance: none;
+        //Position
         position: absolute;
     }
     &__label{
         //General properties
         cursor: pointer;
-        font-size: rem(11);
-        text-transform: uppercase;
+        font-size: rem(10);
+        color: $color-grey-dark;
+        //text-transform: uppercase;
         text-align:center;
-        width: rem(80);
-        height: rem(25);
-        border: 1px solid $color-dark;
+        //width: rem(100);
+        //height: rem(30);
+        //border: 1px solid $color-grey-dark;
         background: $color-light;
-        border-radius: rem(2); 
+        //border-radius: rem(20);
         //Display
         display: flex;
         justify-content: center;
         align-items: center;
         &:hover{
             //General properties
-            background-color: $color-dark;
-            color: $color-light;
+            //background-color: $color-dark;
+            //color: $color-light;
+            border-bottom: 1px solid $color-dark;
+        }
+        @include mediaTablet(){
+            //General properties
+            font-size: rem(14);
         }
     }
 }
 
 .checked{
     //General properties
-    background-color: $color-dark;
-    color: $color-light;
+    //background-color: $color-dark;
+    //color: $color-light;
+    color: $color-dark;
+    border-bottom: 1px solid $color-dark;
 }

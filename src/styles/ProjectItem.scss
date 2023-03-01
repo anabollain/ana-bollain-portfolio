@@ -6,17 +6,18 @@
     &__list{
         &--item{
             //General properties
-            width: rem(280);
-            height: rem(310);
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+            width: rem(250);
+            height: rem(380);
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            //Position
             position: relative;
             @include mediaTablet(){
                 //General properties
-                width: rem(310);
-                height: rem(280);
+                //width: rem(310);
+                //height: rem(280);
             }
             &:hover{
-                box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+                opacity: 80%;
             }
             &--link{
                 //General properties
@@ -29,31 +30,36 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+                gap: rem(10);
             }
             &--img{
                 //General properties
                 width: 100%;
-                height: rem(220);
+                height: rem(250);
                 margin-bottom: rem(15);
                 object-fit: cover;
                 object-position: center;
-                opacity: 80%;
-                &:hover{
-                    padding: rem(15);
-                    position: top;
-                }
+                opacity: 90%;
                 @include mediaTablet(){
-                    height: rem(200);
+                    //height: rem(200);
                 }
             }
             &--title{
                 //General properties
                 font-size: rem(14);
-                text-transform: uppercase;
+                text-transform: capitalize;
                 margin-bottom: rem(5);
             }
+            &--desc{
+                //General properties
+                list-style: none;
+                //Display
+                display: flex;
+                flex-direction: column;
+                gap: rem(8);
+            }
             &--text{
-                font-size: rem(12);
+                font-size: rem(10);
                 width: rem(250);
                 text-align: center;
                 @include mediaTablet(){
@@ -86,12 +92,12 @@
 .works__nav{
     //General properties
     text-decoration: none;
-    color: $color-gunmetal;
+    color: $color-grey-dark;
     //Display
     display: flex;
     justify-content: center;
     align-items: center;
     &:hover{
-        color: $color-extra;
+        color: $color-dark;
     }
 }

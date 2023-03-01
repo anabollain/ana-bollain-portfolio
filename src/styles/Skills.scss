@@ -3,63 +3,71 @@
 @import '../styles/core/mediaqueries';
 
 .main__skills{
+    //General properties
+    width: 100%;
+    margin-top: rem(60);
     //Display
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    //Position
+    position: relative;
+    @include mediaTablet(){
+        //General properties
+        height: 90vh;
+        margin-top: rem(0);
+        //Display
+        flex-direction: row;
+    }
+    &--back{
+        //General properties
+        width: 100%;
+        height: 100%;
+        //background: url('../images/back02.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        opacity: 30%;
+        //Position
+        position: absolute;
+        z-index: -5;
+    }
 }
 
 .skills{
     //General properties
-    margin-top: rem(30);
-    width: fit-content;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-    border-radius: rem(20);
     text-align: center;
-    padding: rem(30);
-    margin-bottom: rem(30);
+    margin-top: rem(30);
+    padding: rem(30) rem(30) rem(30) rem(30);
     //Display
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: rem(40);
+    gap: rem(60);
     @include mediaTablet(){
         //General properties
         text-align: start;
-        width: rem(700);
-        padding: rem(25) rem(40) rem(25) rem(40);
+        width: fit-content;
+        height: 90vh;
+        padding: rem(150) rem(0) rem(0) rem(0);
+        margin: rem(0);
         //Display
         flex-direction: row;
         align-items: flex-start;
-        justify-content: space-between;   
-    }
-    @include mediaDesktop(){
-        //General properties
-        width: rem(800);
-        height: rem(350);
-    }
-    &__div{
-        //Display
-        display: flex;
-        flex-direction: column;
-        &--soft{
-            width: rem(220);
-            @include mediaTablet(){
-                width: rem(250);
-            } 
-        }
-        &--tech{
-            width: rem(220);
-            @include mediaTablet(){
-                width: rem(600);
-            }
-        }
+        justify-content: space-between;  
+        gap: rem(200);
     }
     &__title{
         //General properties
-        font-size: rem(18);
-        margin-bottom: rem(30);
+        font-size: rem(22);
+        //border-bottom: 2px solid $color-dark;
+        //padding-bottom: rem(3);
+        margin-bottom: rem(40);
         @include mediaTablet(){
-            font-size: rem(16);
+            font-size: rem(28);
+            margin-bottom: rem(60);
         }
     }
     &__list{
@@ -72,11 +80,10 @@
         @include mediaTablet(){
             //General properties
             font-size: rem(16);
-            //Display
-            gap: rem(13);
         }
         &--soft{
-            font-size: rem(14);
+            //General properties
+            font-size: rem(15);
             @include mediaTablet(){
                 //Display
                 display: flex;
@@ -98,11 +105,11 @@
         }
         &--item{
             //General properties
-            font-size: rem(14);
+            font-size: rem(15);
             &--bold{
+                //General properties
                 font-weight: 600;
             }
         }
     }
-
 }

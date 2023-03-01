@@ -4,30 +4,23 @@
 
 .works{
     //General properties
-    margin-top: rem(40);
-    margin-bottom: rem(60);
+    margin-top: rem(70);
+    padding-left: rem(30);
+    padding-right: rem(30);
     //Display
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: rem(30);
-    padding-right: rem(30);
-    &__form{
+    @include mediaTablet(){
         //General properties
-        margin-bottom: rem(40);
-        //Display
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: rem(20);
-        @include mediaTablet(){
-            flex-wrap: nowrap;
-        } 
-    }
+        margin-top: rem(0);
+        padding-left: rem(80);
+        padding-right: rem(80);
+    } 
     &__list{
         //General properties
         list-style: none;
+        margin-bottom: rem(60);
         //Display
         display: flex;
         justify-content: center;

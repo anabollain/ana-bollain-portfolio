@@ -6,18 +6,19 @@ function Skills() {
     //RETURN
     return (
         <main className='main__skills'>
+            <div className='main__skills--back'></div>
             <section className='skills'>
                 <div className='skills__div--soft'>
                     <h3 className='skills__title'>Soft Skills</h3>
                     <ul className='skills__list'>
-                        <li className='skills__list--soft'><div className='skills__list--soft--icon'>👐</div><p>Teamwork</p></li>
-                        <li className='skills__list--soft'><div className='skills__list--soft--icon'>💁</div><p>Empathy</p></li>
-                        <li className='skills__list--soft'><div className='skills__list--soft--icon'>🚩</div><p>Problem Solving</p></li>
-                        <li className='skills__list--soft'><div className='skills__list--soft--icon'>🔹</div><p>Attention to detail</p></li>
-                        <li className='skills__list--soft'><div className='skills__list--soft--icon'>🖊️</div><p>Creative Thinking</p></li>
-                        <li className='skills__list--soft'><div className='skills__list--soft--icon'>❔</div><p>Responsiveness</p></li>
-                        <li className='skills__list--soft'><div className='skills__list--soft--icon'>🐧 </div><p>Adaptability</p></li>
-                        <li className='skills__list--soft'><div className='skills__list--soft--icon'>💼</div><p>Management</p></li>
+                        <li className='skills__list--soft'><p>Teamwork</p></li>
+                        <li className='skills__list--soft'><p>Empathy</p></li>
+                        <li className='skills__list--soft'><p>Problem Solving</p></li>
+                        <li className='skills__list--soft'><p>Attention to detail</p></li>
+                        <li className='skills__list--soft'><p>Creative Thinking</p></li>
+                        <li className='skills__list--soft'><p>Responsiveness</p></li>
+                        <li className='skills__list--soft'><p>Adaptability</p></li>
+                        <li className='skills__list--soft'><p>Management</p></li>
                     </ul>
                 </div>
                 <div className='skills__div--tech'>

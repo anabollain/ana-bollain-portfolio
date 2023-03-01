@@ -1,0 +1,24 @@
+@import '../styles/core/functions';
+@import '../styles/core/variables';
+@import '../styles/core/mediaqueries';
+
+.works{
+    &__form{
+        //General properties
+        height: 15vh;
+        //Display
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: rem(15);
+        @include mediaTablet(){
+            //General properties
+            height: 25vh;
+            margin-top: rem(50);
+            //Display
+            flex-wrap: nowrap;
+            gap: rem(80);
+        } 
+    }
+}
