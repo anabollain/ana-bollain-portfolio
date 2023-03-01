@@ -16,7 +16,7 @@
     position: relative;
     @include mediaTablet(){
         //General properties
-        height: 90vh;
+        height: 85vh;
         gap: rem(50);
     }
     &__title{
@@ -29,14 +29,6 @@
         //Position
         position: absolute;
         top: rem(20);
-        overflow: hidden;
-        //Animation
-        animation: 
-        typing 3.5s steps(40, end);
-        @keyframes typing {
-            from { width: 0 }
-            to { width: 100% }
-        }
         @include mediaTablet(){
             //General properties
             font-size: rem(30);
