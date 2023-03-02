@@ -11,7 +11,7 @@ function ProjectItem({ eachProject }) {
                     <img src={eachProject.photo} alt={eachProject.name} className='works__list--item--img' />
                     <h4 className='works__list--item--title'>{eachProject.name}</h4>
                     <ul className='works__list--item--desc'>
-                        <li className='works__list--item--text'>{eachProject.author}</li>
+                        <li className='works__list--item--text'>{eachProject.author} · {eachProject.version}</li>
                         <li className='works__list--item--text'>{eachProject.tech}</li>
                     </ul>
                     <nav>
