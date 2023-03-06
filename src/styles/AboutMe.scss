@@ -24,12 +24,10 @@
         margin-bottom: rem(0);
         //Display
         flex-direction: row-reverse;
-        gap: rem(100);
-    }
-    @include mediaTablet(){
         gap: rem(200);
     }
     &__info{
+        //General properties
         margin-top: rem(90);
         //Display
         display: flex;
@@ -45,29 +43,20 @@
             //General properties
             font-size: rem(34);
             font-weight: 800;
-            @include mediaTablet(){
-                font-size: rem(34);
-            }
         }
         &--subtitle{
             //General properties
-            font-size: rem(14);
-            font-weight: 400;
+            font-size: rem(20);
+            font-weight: 600;
         }
         &--text{
             //General properties
-            list-style: none;
             font-size: rem(14);
+            font-weight: 400;
             //Display
             display: flex;
             flex-direction: column;
             gap: rem(10);
-            @include mediaTablet(){
-                //General properties
-                font-size: rem(12);
-                //Display
-                gap: rem(0);
-            }
         }
         &--load{
             //General properties
