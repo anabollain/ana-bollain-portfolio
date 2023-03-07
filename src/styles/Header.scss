@@ -60,10 +60,10 @@
         @include mediaTablet(){
             //General properties
             width: fit-content;
-            height: 6vh;
+            height: 100%; 
             padding-top: rem(0);
             //Position
-            top: 4vh;
+            top: 0;
             right: rem(50);
         } 
         &--list{
@@ -78,13 +78,8 @@
             align-items: center;
             @include mediaTablet(){
                 //General properties
-                font-size: rem(22);
-                //Display
-                flex-direction: row;  
-            } 
-            @include mediaDesktop(){
-                //General properties
                 font-size: rem(16);
+                height: 100%;
                 //Display
                 flex-direction: row;
             } 
