@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "./static/css/main.7363f624.css",
+    "main.js": "./static/js/main.33fd480c.js",
+    "static/media/ana-bollain.jpg": "./static/media/ana-bollain.bbb2fe6d28b11b12233b.jpg",
+    "static/media/photo-booth-v3.gif": "./static/media/photo-booth-v3.d09b89ca9f3b9589ad50.gif",
+    "static/media/html5-canvas.jpg": "./static/media/html5-canvas.e6b5e01e76cd3f109797.jpg",
+    "static/media/monsterours-battle-v3.gif": "./static/media/monsterours-battle-v3.08fd84be7587001d1c40.gif",
+    "static/media/clock-js.JPG": "./static/media/clock-js.289b702ecb590216ea4c.JPG",
+    "static/media/resumeAnaBollain.pdf": "./static/media/resumeAnaBollain.bfc02223449915361271.pdf",
+    "static/media/breaking-bad-v2.jpg": "./static/media/breaking-bad-v2.2647304e3b1f0634ef85.jpg",
+    "static/media/sunlab.jpg": "./static/media/sunlab.2927ec7f828b75d7a270.jpg",
+    "static/media/memory-game-v2.gif": "./static/media/memory-game-v2.cd7c28ea5475e99db985.gif",
+    "static/media/coding-time-v2.jpg": "./static/media/coding-time-v2.5ec6e421b5fe90d61a5b.jpg",
+    "static/media/adatravellers-v3.jpg": "./static/media/adatravellers-v3.66aa7e759da82abe610d.jpg",
+    "static/media/minions-cards-v2.jpg": "./static/media/minions-cards-v2.0f1f3132c3a9c713e3cf.jpg",
+    "static/media/anonymous-proxy-v3.jpg": "./static/media/anonymous-proxy-v3.14485ac029d3ea3b1678.jpg",
+    "static/media/voice-changer-v3.jpg": "./static/media/voice-changer-v3.a2a6b503021293fe28f4.jpg",
+    "static/media/video-player-v3.jpg": "./static/media/video-player-v3.4de7fe159187d27e79fb.jpg",
+    "static/media/adalabers-v3.jpg": "./static/media/adalabers-v3.e456ef3db02315ddc538.jpg",
+    "static/media/drum-kit-v3.jpg": "./static/media/drum-kit-v3.51e1864ca79939e19950.jpg",
+    "static/media/rick-and-morty-v2.jpg": "./static/media/rick-and-morty-v2.6661e95d5761c54b174a.jpg",
+    "static/media/todo-list-v3.jpg": "./static/media/todo-list-v3.a16dcf13f70a597be1df.jpg",
+    "static/media/key-detection-v2.jpg": "./static/media/key-detection-v2.c8d46c073204ebb2a8e2.jpg",
+    "static/media/contact-v2.jpg": "./static/media/contact-v2.0f891458a1be86f6b138.jpg",
+    "static/media/speech-recognition-v3.jpg": "./static/media/speech-recognition-v3.4506e34843430c597866.jpg",
+    "index.html": "./index.html",
+    "main.7363f624.css.map": "./static/css/main.7363f624.css.map",
+    "main.33fd480c.js.map": "./static/js/main.33fd480c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7363f624.css",
+    "static/js/main.33fd480c.js"
+  ]
+}
